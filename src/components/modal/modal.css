@@ -1,0 +1,24 @@
+/* small  */
+.modal-wrapper {
+  @apply fixed top-0 left-0 w-full h-full  grid place-items-center invisible  z-50 transition-all transform ease-in duration-300 scale-[0] bg-[#00000080] pt-32;
+}
+
+.modal-wrapper.show {
+  @apply visible z-[30] scale-[1];
+}
+
+.modal {
+  @apply w-[90vw] max-w-[650px] bg-white relative rounded-md;
+}
+
+.closeModel-btn {
+  @apply text-[2rem] bg-transparent border-transparent absolute top-4 right-4 cursor-pointer;
+}
+
+.autoHeight {
+  @apply h-auto;
+}
+
+.modalHeight {
+  @apply h-[50vh];
+}

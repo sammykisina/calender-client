@@ -1,0 +1,25 @@
+.sidebar {
+  @apply fixed top-0 -left-[30%] w-[68px] h-[740px] bg-[#ffffff] transition-all duration-[0.5s] z-[200px]  rounded-3xl my-2 mx-2 shadow-md border;
+}
+
+.show__sidebar {
+  @apply left-0;
+}
+
+.sidebar__icon {
+  @apply w-6 h-6;
+}
+
+.sidebarItem {
+  @apply grid-cols-6 my-2 py-2 w-full items-center gap-2 transition-all duration-[0.5s] text-[#8795a7] hover:text-[#6969de];
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    @apply left-0;
+  }
+
+  .show__sidebar {
+    width: calc(68px + 156px);
+  }
+}

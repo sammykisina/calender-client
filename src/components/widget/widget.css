@@ -1,0 +1,7 @@
+.widget {
+  @apply fixed top-[40px] -right-[132%] w-[300px] h-[640px] bg-white border transition-all duration-[0.5s] z-[200px]  rounded-3xl my-3 mr-10 mt-6 md:hidden;
+}
+
+.show__widget {
+  @apply right-0;
+}
